@@ -9,30 +9,44 @@
 <body>
 
   <!-- ===================================== Navbar ====================================== -->
-<div class="navbar">
 
+<div class="navbar">
   <a href="#home">Item 1</a>
   <a href="#about">Item 2</a>
   <a href="#contact">Item 3</a>
-
   <div class="logo"> <img src="Imagens/Etec Logo azulin.png" alt="logo" id="logo"></div>
-</div>
+</div>   
+
 <!-- ===================================== Fim da Navbar ====================================== -->
 
-<!-- ===================================== MAPA ====================================== -->
+  <div class="center">
+    <img src="Imagens/planta da escola.jpg" id="mapa" alt="Mapa da Escola">
+  </div>
 
-<div class="center">
-  <img src="Imagens/Mapa da escola.png" id="mapa" alt="Mapa da Escola">
+
+  <div class="container">
+    <h1>Agende seu local</h1>
+    <form id="agendamentoForm">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" required>
+
+        <label for="ambiente">Ambiente:</label>
+        <input type="text" id="ambiente" required>
+
+        <label for="data">Data:</label>
+        <input type="date" id="data" required>
+
+        <label for="hora">Hora:</label>
+        <input type="time" id="hora" required>
+
+        <div class="Agendar"><button type="button" onclick="agendarSala()" id="Agendar">Agendar</button></div>
+    </form>
 </div>
 
-<!-- ===================================== Fim do MAPA ====================================== -->
+<script src="JS/script.js"></script>
 
-<div class="image-container">
-  <div class="center"><img src="Imagens/imagem teste.jfif" alt="Imagem 1"> <button class="button"> Button </button></div>
-  <div class="center"><img src="Imagens/imagem teste.jfif" alt="Imagem 1"> <button class="button"> Button </button></div>
-  <div class="center"><img src="Imagens/imagem teste.jfif" alt="Imagem 1"> <button class="button"> Button </button></div>
-</div>
-<p>Texto ou conteúdo adicional aqui.</p>
+
+
 
 </body>
 </html>

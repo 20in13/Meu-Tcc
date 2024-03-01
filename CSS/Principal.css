@@ -3,9 +3,10 @@ body {
     font-family: Arial, sans-serif;
   }
 
-  .navbar {
-    background-color: #333;
+  .navbar{
+    background-color: hsl(0, 0%, 20%);
     overflow: hidden;
+
   }
 
   .navbar a {
@@ -37,10 +38,114 @@ body {
   }
 
   #mapa{
-    max-width: 100%; /* responsibilidade */
-    height: auto;  
+    max-width: 60%;
+    width: 100%;
   }
 
   .center{
     text-align: center;
   }
+
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+form {
+    display: grid;
+    gap: 10px;
+}
+
+button {
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+.container {
+  max-width: 600px;
+  margin: 50px auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-top: 10px;
+}
+
+input,
+button {
+  margin-top: 5px;
+  padding: 8px;
+}
+
+#Agendar {
+  cursor: pointer;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+}
+
+.Agendar{
+  text-align: center;
+}
+
+.Agendar :hover{
+
+  background-position: right center;
+  background-size: 200% auto;
+-webkit-animation: pulse 2s infinite;
+animation: pulse512 1.5s infinite;
+
+}
+
+@keyframes pulse512 {
+0% {
+box-shadow: 0 0 0 0 #da050566;
+}
+
+70% {
+box-shadow: 0 0 0 10px rgb(218 103 68 / 0%);
+}
+
+100% {
+box-shadow: 0 0 0 0 rgb(218 103 68 / 0%);
+}
+}
